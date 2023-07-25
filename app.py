@@ -32,7 +32,6 @@ def hello_world():
 
     allTodo=Todo.query.all()
     return render_template('index.html',allTodo=allTodo)
-    # return 'hello,world'
 
 @app.route('/update/<int:sno>',methods=['POST','GET'])
 def update(sno):
